@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    background: #e1e7ff;
+}
+
+.escritorio {
+    
+    width: 100%;
+    height: 881px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto {
+    margin-top: 165px;
+    height: 80%;
+    width: 50%;
+}
+
+.logo {
+    height: 100px;
+    padding: 20px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.textoE {
+    width: 35%;
+    position: relative;
+}
+
+.b {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.b button {
+    width: 45%;
+    height: 50px;
+    margin: auto auto;
+    border-radius: 15px ;
+    border: solid rgb(0, 0, 0) 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton button {
+    width: 280px;
+    height: 50px;
+    position: absolute;
+    top: 770px;
+    left: 95px;
+    border-radius: 15px;
+    font-size: 20px;
+    background: #ffffff;
+    border: solid rgb(33, 50, 109);
+    font-weight: bold;
+}
+
+
+#texto {
+    margin: 55px 0 140px 30px;
+    width: 90%;
+    height: 50%;
+    font-size: 35px;
+    background: #e1e7ff;
+    border: none;
+    color: rgb(54, 68, 119);
+    /* text-align: center; */
+}
+
+#resultado {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 75%;
+    height: 90%;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 35px;
+    border: solid rgb(54, 68, 119) 3px;
+
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+#encriptar {
+    color: white;
+    background: #180e5b;
+}
+
+#desencriptar {
+    background: #e1e7ff;
+    color: white;
+    color: rgb(54, 68, 119);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    overflow: hidden;
+}
+
+textarea:disabled {
+    background: #ffffff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 760px) {
+    .escritorio {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    #texto {
+        width: 90%;
+        height: 400px;
+    }
+
+    .b {
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    .boton{
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    .textoE{
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    #copiar{
+        width: 100%;
+        height: 80px;
+        position:initial;
+        margin: 25px 0px 100px 0px;
+    }
+
+    #resultado{
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .escritorio {
+        width: 100%;
+        height: 100%;
+    }
+
+    .b button{
+        width: 45%;
+    }
+    
+    .textoE{
+        width: 100%;
+        margin: 50px 0 0 0px;       
+    }
+
+    #texto{
+        height: 500px;
+    }
+
+    #copiar{
+        width: 95%;
+        height: 80px;
+        position:initial;
+        margin: 50px 0px 120px 10px;
+        
+    }
+
+    #resultado{
+        width: 80%;
+        height: 500px;
+        margin-left: 15px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+} 
+
